@@ -12,7 +12,7 @@
 }
 .content {
   width: 950px;
-  margin: auto;
+  margin: 0 auto;
 }
 header {
   text-align: center;
@@ -42,7 +42,7 @@ section .img-left {
   float: left;
   position: relative;
 }
-.img-left:nth-child(1):before {
+.img-left::before {
   content: "";
   position: absolute;
   top: 0;
@@ -83,5 +83,91 @@ section .img-left {
 }
 
 section {
-  margin-bottom: 390px;
+  margin-bottom: 200px;
+}
+.rent {
+  text-align: center;
+}
+.rent h2 {
+  font-size: 40px;
+
+  font-weight: normal;
+}
+.rent p {
+  margin: -25px;
+  font-size: 22px;
+}
+.content-2 {
+  background-color: rgb(155, 204, 187);
+  text-align: center;
+  margin-top: 200px;
+  padding: 80px 0;
+}
+.nom-mail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.nom-mail label {
+  display: block;
+  margin-right: 640px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.nom-mail input {
+  width: 700px;
+  margin-left: 10px;
+
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.timeline input,
+.message input {
+  width: 1420px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+
+  background: transparent;
+}
+label {
+  display: block;
+  margin-right: 1330px;
+  color: rgb(122, 105, 97);
+  font-size: 21px;
+}
+.message label {
+  margin-bottom: 20px;
+}
+form button {
+  position: absolute;
+  right: 220px;
+  background: transparent;
+  font-size: 21px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+form {
+  position: relative;
+}
+footer {
+  text-align: center;
+  width: 380px;
+  margin: auto;
+  font-size: 22px;
+}
+.icone {
+  display: flex;
+  justify-content: center;
+}
+.icones {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  margin-left: 10px;
+  border-radius: 50px;
 }
