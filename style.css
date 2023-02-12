@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 :root {
   --primary: #9bccbb;
   --secondary: #5a5661;
+}
+* {
+  font-family: "Karla", sans-serif;
 }
 .img-left {
   display: inline-block;
   margin-right: 50px;
 }
 .content {
-  width: 900px;
+  width: 950px;
   margin: auto;
 }
 header {
@@ -16,15 +20,30 @@ header {
 .img-left img {
   width: 100%;
 }
-
 .img-left {
+  margin-right: 90px;
+}
+.text-right {
+  font-size: 22px;
+  line-height: 38px;
+  padding-top: 20px;
+  width: 450px;
+}
+.text-left {
+  font-size: 22px;
+  padding-top: 20px;
+  line-height: 38px;
+  margin-right: 20px;
+}
+
+section .img-left {
   height: 400px;
   width: 400px;
   float: left;
   position: relative;
 }
-.img-left::before {
-  content: "hkh";
+.img-left:nth-child(1):before {
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -34,9 +53,21 @@ header {
   transform: translate(-35px, 35px);
   z-index: -1;
 }
+.img-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(35px, 35px);
+  background-color: var(--primary);
+  z-index: -1;
+}
 
 .img-right img {
   height: 400px;
+
   width: 400px;
 }
 .left {
@@ -48,6 +79,7 @@ header {
 }
 .img-right {
   float: right;
+  position: relative;
 }
 
 section {
